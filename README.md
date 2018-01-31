@@ -50,6 +50,7 @@ This file should contains the list of dashboards. The menu at the top of the scr
 <td><img src="./resources/menu_top.png" height="172"></td>
 </tr>
 </table>
+
 ### 3.2 `dashboards/$directory/config.json`
 The base configuration file. You can set the `application` name and the base metric path in this file.
 ```
@@ -98,7 +99,9 @@ This is the configuration for a static dashboard. The dashboard configurations w
 ]
 
 ```
+
 #### 3.3.2 Dynamic Dashboard
+
 This can be used to generate a dashboard dynamically with a template. In the given example, the `metricPath` will be resolved to `Application Infrastructure Performance|AccountService|Custom Metrics|Docker|*|Summary|Image Count`, where `*` in this case resolves to the name of the docker host.
 eg. Application Infrastructure Performance|AccountService|Custom Metrics|Docker|`dockerhost1.example.com`|Summary|Image Count
 <table>
